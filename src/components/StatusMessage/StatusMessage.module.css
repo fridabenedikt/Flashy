@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+.info,
+.loading,
+.error,
+.unknown {
+  font-weight: 400;
+  width: 40%;
+  margin: 5rem auto;
+  padding: 2.5%;
+  border-radius: var(--border-radius);
+}
+
+.info h1,
+.loading h1,
+.error h1,
+.unknown h1 {
+  font-size: 2rem;
+}
+
+.info p,
+.loading p,
+.error p,
+.unknown p {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+.info h1 {
+  border-bottom: 2px solid white;
+}
+
+.error h1 {
+  border-bottom: 2px solid black;
+}
+
+.info {
+  background-color: var(--color-blue-dark);
+  color: white;
+}
+
+.loading {
+  text-align: center;
+  background-color: none;
+}
+
+.error,
+.unknown {
+  background-color: rgba(255, 0, 0, 0.75);
+}

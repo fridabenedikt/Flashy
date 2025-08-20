@@ -1,0 +1,180 @@
+/*
+TODO: 
+- Combine classes (ClassNames, cx)
+- Make margin (spacing) consistent
+*/
+
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10rem;
+  padding: 4rem 0 8rem;
+}
+
+.home h2 {
+  font-size: 3rem;
+  text-align: center;
+}
+
+.home h3 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.infoContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2.5rem 20%;
+
+  font-weight: 600;
+  font-style: normal;
+  line-height: 3rem;
+  text-align: center;
+}
+
+.infoContainer i {
+  color: var(--color-blue-dark);
+}
+
+.infoContainer > p {
+  font-size: 1.75rem;
+}
+
+.infoContainer > .ps {
+  font-size: 0.8rem;
+  margin: 0;
+}
+
+.infoContainer a {
+  width: 20%;
+  margin: 2.5rem 0;
+  color: var(--font-color);
+}
+
+.blueBg {
+  color: white;
+  background-color: var(--color-blue-dark);
+}
+
+.setsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.setList {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 5rem;
+  margin: 2rem 0;
+}
+
+.controls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.searchContainer {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.searchContainer > * {
+  padding: 1rem;
+  border: 0.1rem solid var(--color-blue-dark);
+}
+
+.searchContainer > svg {
+  outline: none;
+  border-right: none;
+  border-top-left-radius: var(--border-radius);
+  border-bottom-left-radius: var(--border-radius);
+  padding-right: 0.5rem;
+}
+
+.search {
+  flex-grow: 1;
+  border-left: none;
+  border-top-right-radius: var(--border-radius);
+  border-bottom-right-radius: var(--border-radius);
+  padding-left: 0.5rem;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.filterSubjects {
+  width: 100%;
+}
+
+.purple {
+  background-color: rgba(194, 41, 255, 0.506);
+}
+
+.green {
+  background-color: rgba(72, 255, 72, 0.44);
+}
+
+.blue {
+  background-color: rgba(11, 141, 255, 0.438);
+}
+
+.yellow {
+  background-color: rgba(255, 234, 7, 0.382);
+}
+
+.feedback {
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-card);
+  padding: 1.25rem 1rem 1rem;
+  margin: 2rem;
+
+  /* &:nth-child(3n-1) {
+    background-color: rgb(148, 10, 148);
+  }
+
+  &:nth-child(3n-2) {
+    background-color: rgb(123, 221, 123);
+  }
+
+  &:nth-child(3n-3) {
+  background-color: rgb(10, 86, 156);
+} */
+}
+
+.feedback p {
+  margin: 0;
+  padding: 0;
+}
+
+.feedback > p:first-of-type {
+  font-size: 1.25rem;
+}
+
+.by {
+  font-size: 1rem;
+}
+
+.likeButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--color-red-light);
+}
+
+.commentButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--color-blue-light);
+}

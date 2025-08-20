@@ -1,0 +1,17 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background-color: var(--color-blue-dark);
+  color: white;
+  position: sticky;
+}
+
+.love {
+  display: flex;
+  gap: 0.25rem;
+  align-items: center;
+  font-size: 1.5rem;
+  margin: 2.5rem 0 2.5rem;
+}

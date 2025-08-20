@@ -1,0 +1,99 @@
+.box {
+  flex-grow: 1;
+  width: 100%;
+  min-height: 40rem;
+  display: flex;
+  flex-direction: column;
+  perspective: 100rem;
+  /* remove this to remove 3d effect */
+}
+
+.card {
+  flex-grow: 1;
+  position: relative;
+  font-size: 3rem;
+  cursor: pointer;
+  transform-style: preserve-3d;
+  transition: transform 0.4s ease;
+}
+
+.front,
+.back {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 5%;
+  box-sizing: border-box;
+
+  border-radius: var(--border-radius);
+  background-color: #fff;
+  box-shadow: var(--shadow-card);
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  transition: box-shadow 0.2s ease;
+
+  &:hover {
+    box-shadow: var(--shadow-card-hover);
+  }
+
+  &:active {
+    background-color: var(--bg-color);
+  }
+}
+
+.front p,
+.back p,
+.frontWithImage p {
+  text-align: center;
+  line-height: 100%;
+  width: 100%;
+  max-height: 100%;
+  margin: 0;
+  font-size: auto;
+  overflow: hidden;
+  overflow-wrap: break-word;
+}
+
+.frontWithImage {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.frontWithImage img {
+  max-width: 50%;
+  max-height: 100%;
+}
+
+.flipped {
+  transform: rotateX(-180deg);
+}
+
+.card .back {
+  transform: rotateX(180deg);
+}
+
+.arrows {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+  width: 100%;
+  margin: 2.5rem 0 0;
+  color: white;
+}
+
+.arrows * {
+  margin: 0;
+}
+
+.arrows > * {
+  width: 40%;
+  height: 100%;
+}
